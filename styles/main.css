@@ -1,0 +1,143 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* END OF RESET */
+
+/*
+Colors:
+  #333 - header gray/Dark Text;
+  #026E00 - button green;
+  #51744E - dark text;
+  #43853D - important text;
+  #EAF5E9 - alert background;
+  #CCC - gray/Light Text;
+*/
+
+/*header and footer border-box, others not*/
+
+/** {
+	box-sizing: border-box;
+}*/
+html {
+	font-family: "Source Sans Pro", sans-serif;
+}
+
+.shrinky {
+	display: block;
+	max-width: 100%;
+}
+
+.container {
+	width: 100%;
+	max-width: 980px;
+	margin: 0 auto;
+}
+
+header {
+	background: #333;
+	text-align: center;
+	padding-top: 0.6rem;
+}
+
+.fluid {
+  width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+  background-color: #026E00;
+  color: #fff;
+}
+
+.top-navlist {
+	margin-top: 1px;
+	padding-top: 0.3rem;
+	padding-bottom: 1rem;
+}
+
+.top-navlist li {
+	display: inline-block;
+	line-height: 1.25rem;
+	border-left: 2px solid #999;
+	font-size: 14px;
+	padding-left: 1.1rem;
+	padding-right: 1.1rem;
+}
+
+.top-navlist li:first-child {
+	border-left: none;
+}
+
+.top-navlist a {
+	color: #CCC;
+}
+
+.logo {
+	max-height: 75px;
+	max-width: 180px;
+}
+
+.splash {
+  display: flex;
+  background-image: url("../assets/images/background.jpg");
+  align-items: center;
+  justify-content: space-around;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: visible;
+	position: relative;
+	top: -1px;
+}
+
+.main-img {
+  border: 20px solid transparent;
+  min-width: 1px;
+}
