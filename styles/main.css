@@ -90,6 +90,7 @@ header {
 
 a {
 	text-decoration: none;
+	color: #CCC;
 }
 
 a:hover {
@@ -116,8 +117,22 @@ a:hover {
 	border-left: none;
 }
 
-.top-navlist a {
-	color: #CCC;
+.bottom-navlist {
+	min-width: 330px;
+	text-align: right;
+	margin-left: auto;
+}
+
+.bottom-navlist li {
+	display: inline-block;
+	line-height: 1rem;
+	border-left: 1px solid #999;
+	padding-left: 0.4rem;
+	padding-right: 0.4rem;
+}
+
+.bottom-navlist li:first-child {
+	border-left: none;
 }
 
 .logo {
@@ -140,4 +155,29 @@ a:hover {
 .main-img {
   border: 20px solid transparent;
   min-width: 1px;
+}
+
+footer {
+	position: relative;
+	background: #333;
+	color: #FFF;
+}
+
+.footer-contain {
+	box-sizing: border-box;
+	padding: 1rem 20px;
+}
+
+footer p {
+	margin-bottom: 0.65rem;
+	font-size: 0.85rem;
+}
+
+.copyright {
+	margin-top: 1rem;
+	margin-bottom: 1.25rem;
+}
+.bottom-image-and-links {
+	display: flex;
+	align-content: center;
 }
